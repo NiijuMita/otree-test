@@ -1,0 +1,421 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+
+# Make data base, printed on Tue Jun 14 14:30:54 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+VSCODE_LOG_NATIVE = false
+# makefile (from `Makefile', line 49)
+TARGET = 
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/mitaniiju/niijumita
+# makefile
+SHELL = /bin/sh
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 60)
+JUPYTER_HOST_PORT = 8888
+# makefile (from `Makefile', line 55)
+IMAGE_NAME = $(PROJECT_NAME)-image
+# makefile (from `Makefile', line 38)
+define START_DOCKER_CONTAINER
+if [ `$(DOCKER) inspect -f {{.State.Running}} $(CONTAINER_NAME)` = "false" ] ; then
+        $(DOCKER) start $(CONTAINER_NAME)
+fi
+endef
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# makefile (from `Makefile', line 59)
+CONTAINER_NAME = $(PROJECT_NAME)-container
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /var/folders/8y/dxfs2fbs20519x8sw29ffztm0000gn/T/vscode-ipc-9939fdf6-a4e8-4241-960a-2c0fe2adfa6a.sock
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /Users/mitaniiju/.poetry/bin:/Users/mitaniiju/.nodebrew/current/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# makefile (from `Makefile', line 48)
+DOCKER = docker
+# environment
+LaunchInstanceID = 5E819105-1D6D-47B3-99F9-9D7E1894E99D
+# environment
+VSCODE_LOG_STACK = false
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# makefile (from `Makefile', line 63)
+PYSEN = poetry run pysen
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.oRes7o3lgQ/Listeners
+# makefile (from `Makefile', line 58)
+OTREE_CONTAINER_PORT = 8001
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from `Makefile', line 50)
+PWD = `pwd`
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# makefile (from `Makefile', line 62)
+PYTHON = poetry run python
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/mitaniiju
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/mitaniiju/Library/Application Support/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LOGNAME = mitaniiju
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = mitaniiju
+# makefile (from `Makefile', line 2)
+.DEFAULT_GOAL := help
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/8y/dxfs2fbs20519x8sw29ffztm0000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/mitaniiju/Library/Application Support/Code/1.67.2-main.sock
+# makefile (from `Makefile', line 8)
+define PRINT_HELP_PYSCRIPT
+import os, re, sys
+
+if os.environ['TARGET']:
+    target = os.environ['TARGET']
+    is_in_target = False
+    for line in sys.stdin:
+        match = re.match(r'^(?P<target>{}):(?P<dependencies>.*)?## (?P<description>.*)$$'.format(target).format(target), line)
+        if match:
+            print("target: %-20s" % (match.group("target")))
+            if "dependencies" in match.groupdict().keys():
+                print("dependencies: %-20s" % (match.group("dependencies")))
+            if "description" in match.groupdict().keys():
+                print("description: %-20s" % (match.group("description")))
+            is_in_target = True
+        elif is_in_target == True:
+            match = re.match(r'^\t(.+)', line)
+            if match:
+                command = match.groups()
+                print("command: %s" % (command))
+            else:
+                is_in_target = False
+else:
+    for line in sys.stdin:
+        match = re.match(r'^([a-zA-Z_-]+):.*?## (.*)$$', line)
+        if match:
+            target, help = match.groups()
+            print("%-20s %s" % (target, help))
+endef
+# makefile (from `Makefile', line 51)
+PYTHONPATH = $PYTHONPATH:$(pwd)
+# makefile (from `Makefile', line 57)
+OTREE_HOST_PORT = 8001
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.42797768.42797774
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# makefile (from `Makefile', line 61)
+JUPYTER_CONTAINER_PORT = 8888
+# environment
+__CF_USER_TEXT_ENCODING = 0x1F5:0x1:0xE
+# environment
+COMMAND_MODE = unix2003
+# makefile (from `Makefile', line 56)
+DOCKERFILE = docker/Dockerfile
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from `Makefile', line 54)
+PROJECT_NAME = niijumita
+# environment
+LC_ALL = C
+# environment
+SECURITYSESSIONID = 186b8
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# default
+.INCLUDE_DIRS = /usr/local/include
+# makefile (from `Makefile', line 64)
+PYTEST = poetry run pytest
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 9972
+# variable set hash-table stats:
+# Load=80/1024=8%, Rehash=0, Collisions=2/107=2%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777232, inode 44157787): 21 files, no impossibilities.
+
+# 21 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+create-container:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 84):
+	$(DOCKER) run -it -v $(PWD):/work -p $(OTREE_HOST_PORT):$(OTREE_CONTAINER_PORT) --name $(CONTAINER_NAME) $(IMAGE_NAME)
+	
+
+init-docker:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 81):
+	$(DOCKER) build -t $(IMAGE_NAME) -f $(DOCKERFILE) .
+	
+
+# Not a target:
+all:
+#  Command-line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+.PHONY: clean clean-model clean-pyc docs help init-docker create-container start-container jupyter test lint profile clean clean-data clean-docker clean-container clean-image
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+create-container-no-mount:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 87):
+	$(DOCKER) run -it -p $(OTREE_HOST_PORT):$(OTREE_CONTAINER_PORT) --name $(CONTAINER_NAME) $(IMAGE_NAME)
+	
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+format:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 104):
+	$(PYSEN) run format
+	
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-14 13:30:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+clean-data:
+#  Phony target (prerequisite of .PHONY).
+ 
+make: *** No rule to make target `all'.  Stop.
+
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean-container:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+test:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 98):
+	$(PYTEST)
+	
+
+jupyter:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 95):
+	$(POETRY) jupyter-notebook --ip=0.0.0.0 --port=${JUPYTER_CONTAINER_PORT}
+	
+
+help:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 78):
+	@$(PYTHON) -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
+	
+
+clean-model:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean-pyc:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+run:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 71):
+	cd experiments && poetry run otree prodserver $(OTREE_HOST_PORT)
+	
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean-image:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+docs:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+lint:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 101):
+	$(PYSEN) run lint
+	
+
+profile:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+start-container:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 90):
+	@echo "$$START_DOCKER_CONTAINER" | $(SHELL)
+	@echo "Launched $(CONTAINER_NAME)..."
+	$(DOCKER) attach $(CONTAINER_NAME)
+	
+
+clean-docker:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=24/1024=2%, Rehash=0, Collisions=1/53=2%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Tue Jun 14 14:30:54 2022
+
+ 

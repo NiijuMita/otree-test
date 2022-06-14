@@ -1,0 +1,4 @@
+make: Entering directory `/Users/mitaniiju/niijumita'
+poetry run python -c "$PRINT_HELP_PYSCRIPT" <  Makefile
+make: Leaving directory `/Users/mitaniiju/niijumita'
+ 

@@ -1,0 +1,1 @@
+{"buildTargets":["clean","clean-container","clean-data","clean-docker","clean-image","clean-model","clean-pyc","create-container","create-container-no-mount","docs","format","help","init-docker","jupyter","lint","make","profile","run","start-container","test"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
